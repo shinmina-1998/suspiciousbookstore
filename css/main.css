@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 헤더 */
+
+.header_all{
+    height: 944px;
+background: url(../images/main/bg.jpg)no-repeat center top / cover;
+}
+
+.icon {
+    width: 1320px;
+    margin: auto;
+padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.icon a {
+    color: #666;
+}
+
+.icon a:hover{
+    text-decoration: underline;
+}
+
+.icon img{
+    filter: invert(0);
+}
+
+.icon img:hover{
+filter: invert(1);
+}
+
+.header {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.header ul {
+    width: 1320px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.header ul a {
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.7s;
+
+}
+
+.header ul a:hover{
+color: #266424;
+}
+
+/* 메인배너(슬라이드) */
+.gallery-center {
+    width: 100%;
+    margin: 50px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery-center_inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-center img {
+    width: 100%;
+}
+
+/* 이동버튼 이미지로 바꾸기*/
+.gallery-center .swiper-button-prev {
+    left: 21.5%;
+}
+
+.gallery-center .swiper-button-next {
+    right: 21.5%;
+}
+
+.gallery-center .swiper-button-prev,
+.gallery-center .swiper-button-next {
+    width: 60px;
+    height: 60px;
+}
+
+.gallery-center .swiper-button-prev:after,
+.gallery-center .swiper-button-next:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.gallery-center .swiper-button-prev:after {
+    background: url(../images/main/prew.png);
+}
+
+.gallery-center .swiper-button-next:after {
+    background: url(../images/main/next.png);
+}
+
+/* 수상한 책방 이야기  */
+
+.overbox{
+    overflow: hidden;
+}
+
+.about_box {
+    width: 1320px;
+    margin: 300px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about_bnt{
+    display: inline-block;
+    background-color: #40382E;
+    padding: 20px;
+    color: #fff;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.about_bnt:hover{
+    background-color: #266424;
+    transition: 1s;
+}
+
+.text1 {
+    padding-top: 60px;
+    margin-bottom: 250px;
+}
+
+.text1 p {
+    font-size: 26px;
+    color: #266424;
+}
+
+.text1 h1 {
+    font-size: 42px;
+    margin: 20px 0 40px 0;
+}
+
+.fox {
+    margin-right: -200px;
+}
+
+/* 신작 도서 */
+
+h2 {
+    margin: auto;
+    width: 1320px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.ment {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ment p {
+    font-size: 22px;
+    color: #666;
+}
+
+.ment a {
+    font-size: 26px;
+}
+
+.ment a:hover{
+    font-weight: 700;
+}
+
+#scroller2 p {
+    color: #666;
+}
+
+#scroller2 h3{
+    font-size: 18px;
+}
+
+.simply-scroll {
+    width: 100%;
+    height: 500px;
+}
+
+.simply-scroll .simply-scroll-list li {
+    width: 231px;
+    height: 500px;
+}
+
+/* 베스트 도서 */
+.best {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best img{
+    display:block;
+    transition: 1s;
+  }
+
+.over{
+    overflow: hidden;
+}
+
+.best a img:hover{
+    transform: scale(1.1);
+
+}
+
+.best h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.best p {
+    color: #666;
+}
+
+/* bg2 */
+.bg2 {
+    width: 100%;
+    height: 380px;
+    background: url(../images/main/bg2.jpg)no-repeat center top/cover fixed;
+    margin: 120px 0;
+
+}
+
+.imgbox {
+    width: 1320px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textbox h3 {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.imgbox img {
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* 리뷰 */
+.review {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+
+
+/* 갤러리 꾸미기 */
+.gallery {
+    width: 1320px;
+    margin: 50px auto;
+    padding: 0 50px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery_inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .swiper-slide a {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
+/*이동버튼 영역 색상 바꾸기*/
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+    color: #707070;
+}
+
+
+/* SHOP */
+.shop {
+    margin-top: 120px;
+}
+
+.goods {
+    width: 1215px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.box1 h3{
+    margin-bottom: 20px;
+}
+
+.box1 p {
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.box3{
+    display: flex;
+    flex-wrap: wrap;
+margin-left: 50px;
+justify-content: space-between;
+gap: 25px 0;
+}
+
+.box3 div{
+    position: relative;
+}
+
+.box3 p{
+    font-weight: 500;
+}
+
+.box3 div img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.box3 a:hover img:nth-child(2){
+    opacity: 1;
+}
+
+/* 푸터 */
+.footer{
+    background-color: #d8cbb9;
+    text-align: center;
+}
+
+.footer_in{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+padding-top: 40px;
+    
+}
+
+.footer_in a{
+    color: #40382E;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.footer_in a:hover{
+    text-decoration: underline;
+}
+
+span{
+    margin: 0 25px;
+}
+
+.footer p{
+    margin: 40px 0px;
+    font-size: 20px;
+    color: #40382E;
+}
+
+.footer img{
+    padding-bottom: 40px;
+}
+
+/* 탑버튼 */
+.top_btn{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* 탑버튼 누르면 부드럽게 올라가기 */
+html {
+    scroll-behavior: smooth;
+}
+
+
+

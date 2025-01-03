@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 헤더 */
+.icon {
+    width: 1320px;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.icon a {
+    color: #666;
+    font-size: 16px;
+}
+
+.icon a:hover {
+    text-decoration: underline;
+}
+
+.icon img {
+    filter: invert(0);
+}
+
+.icon img:hover {
+    filter: invert(1);
+}
+
+.header {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.header ul {
+    width: 1320px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.header ul a {
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.7s;
+
+}
+
+.header ul a:hover {
+    color: #266424;
+}
+
+/*  배너 */
+.bn {
+    width: 100%;
+    display: block;
+    margin: 30px 0 100px;
+}
+
+
+/* 내비 */
+
+.nav {
+    background-color: #eee;
+    padding: 30px 0
+}
+
+.nav ul {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 0 340px;
+}
+
+.nav a {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    font-weight: 700;
+}
+
+/* 베스트 상품 */
+.best {
+    margin: auto;
+    margin-top: 100px;
+    width: 1320px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bestbox{
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+}
+
+.bestbox div{
+    position: relative;
+}
+
+.bestbox div img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.bestbox a:hover img:nth-child(2){
+    opacity: 1;
+}
+
+.p2{
+    font-size: 16px;
+    color: #666;
+}
+
+/* 전체 상품 (더보기) */
+
+.ment {
+    display: flex;
+    width: 1320px;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ment h2 {
+    font-size: 30px;
+}
+
+.ment a {
+    font-size: 26px;
+}
+
+.ment a:hover {
+    font-weight: 700;
+}
+
+/* 전체 상품 박스 */
+.allbox{
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 110px 0px;
+    margin-bottom: 210px;
+}
+
+.allbox div{
+    position: relative;
+}
+
+.allbox div img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.allbox a:hover img:nth-child(2){
+    opacity: 1;
+}
+
+/* 푸터 */
+.footer {
+    background-color: #d8cbb9;
+    text-align: center;
+}
+
+.footer_in {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 40px;
+
+}
+
+.footer_in a {
+    color: #40382E;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.footer_in a:hover {
+    text-decoration: underline;
+}
+
+span {
+    margin: 0 25px;
+}
+
+.footer p {
+    margin: 40px 0px;
+    font-size: 20px;
+    color: #40382E;
+}
+
+.footer img {
+    padding-bottom: 40px;
+}
+
+/* 탑버튼 */
+.top_btn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* 탑버튼 누르면 부드럽게 올라가기 */
+html {
+    scroll-behavior: smooth;
+}
+
+
